@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
-	<title>React - Bootstrap Theme</title>
+	<title>performeter.io - Bootstrap Theme</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<!-- stylesheets -->
@@ -28,7 +28,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		      	</button>
-      			<a href="index.html" class="navbar-brand">React</a>
+      			<a href="index.html" class="navbar-brand">performeter.io</a>
     		</div>
     		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       			<ul class="nav navbar-nav navbar-right">
@@ -117,7 +117,7 @@
 			<div class="row header">
 				<div class="col-md-12">
 					<h2>Need an easy way to customize your site?</h2>
-					<p>React is perfect for novice developers and experts alike.</p>
+					<p>performeter.io is perfect for novice developers and experts alike.</p>
 				</div>
 			</div>
 			<div class="row feature">
@@ -125,7 +125,7 @@
 					<h4>You don't need to have great technical experience to use your product.</h4>
 					<p>
 						Whether you want to fill this paragraph with some text like I'm doing right now, this place
-						is perfect to describe some features or anything you want - React has a complete solution for you.
+						is perfect to describe some features or anything you want - performeter.io has a complete solution for you.
 					</p>
 				</div>
 				<div class="col-md-6 image">
@@ -461,7 +461,7 @@
 			</div>
 			<div class="row credits">
 				<div class="col-md-12">
-					Copyright © 2014. React
+					Copyright © 2014. performeter.io
 				</div>
 			</div>
 		</div>
