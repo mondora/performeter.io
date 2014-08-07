@@ -73,16 +73,12 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                         label.removeClass('valid').addClass('error');
                         var index = -1;
                         try {
-                            console.log("rsponse msg:"+resp.msg);
                             var parts = resp.msg.split(' - ', 2);
-                            console.log("part:"+parts[1]);
                             if (parts[1] === undefined) {
                                 msg = resp.msg;
                             } else {
                                 var i = parseInt(parts[0], 10);
-                                console.log("parts[0]"+i);
                                 if (i.toString() === parts[0]) {
-                                    console.log("I'm here!")
                                     index = parts[0];
                                     msg = parts[1];
                                 } else {
@@ -107,7 +103,6 @@ For e.g. 'http://blahblah.us1.list-manage.com/subscribe/post-json?u=5afsdhfuhdsi
                     ) {
                         msg = $.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]];
                     }
-                    console.log("msg:"+msg);
                     label.html(msg);
 
                     label.show(2000);

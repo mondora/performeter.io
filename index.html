@@ -15,6 +15,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/theme.js"></script>
+	<script src="js/jquery.ajaxchimp.js"></script>
 
 	<!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -45,17 +46,24 @@
 				We don’t want your users to be stressed by your application poor performances, we help stressing the application before putting a new feature to the whole customer base. 
 			</p>
 			<div class="cta animated fadeInDown">
-            <form class="col-sm-7">
-					<input type="text" name="email" class="form-control" placeholder="Your email address" />    
+
+
+            <form id="private-beta-subscribe" class="col-sm-7">
+            		<label for="mc-email" id="status" class="cta">Join our free invite-only private beta:</label>
+
+					<input id="mc-email"  type="email" class="form-control" placeholder="Your email address" />    
 					<br/>
-   				<a href="signup.html" class="button align-right">Sign up free private beta NOW!</a>
-				</form>
+
+   				<input type="submit" class="button align-right" value="Sign up free private beta NOW!"/>
+			</form>
 			</div>
 			<div class="img"></div>
 		</div>
 	</div>                
+
 	
 	
+
 
 	<div id="features">
 		<div class="container">
@@ -98,126 +106,7 @@
 			</div>
 		</div>		
 	</div>
-    <!--
-	<div id="pricing">
-		<div class="container">
-			<div class="row header">
-				<div class="col-md-12">
-					<h3>We are in private Beta. All for Free. No contract. Cancel when you want.</h3>
-					<p>Our future plans will be alike</p>
-				</div>
-			</div>
-			<div class="row charts">
-				<div class="col-md-4">
-					<div class="chart first">
-						<div class="quantity">
-							<span class="dollar">$</span>
-							<span class="price">0</span>
-							<span class="period">/month</span>
-						</div>
-						<div class="plan-name">opensource</div>
-						<div class="specs">
-							<div class="spec">
-								<span class="variable">5</span>
-								projects
-							</div>
-							<div class="spec">
-								<span class="variable">Visiblity</span>
-								our logo on your page
-							</div>
-							<div class="spec">
-								<span class="variable">Suppo</span>
-								online terminal
-							</div>
-							<div class="spec">
-								<span class="variable">10</span>
-								total products
-							</div>
-							<div class="spec">
-								<span class="variable">1.0%</span>
-								Transaction fee
-							</div>
-						</div>
-						<a class="btn-signup button-clear" href="signup.html">
-							<span>Start free trial</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="chart featured">
-						<div class="popular">Most popular</div>
-						<div class="quantity">
-							<span class="dollar">$</span>
-							<span class="price">79</span>
-							<span class="period">/month</span>
-						</div>
-						<div class="plan-name">Profesional</div>
-						<div class="specs">
-							<div class="spec">
-								<span class="variable">15</span>
-								team members
-							</div>
-							<div class="spec">
-								<span class="variable">Digital</span>
-								recurring billing
-							</div>
-							<div class="spec">
-								<span class="variable">Virtual</span>
-								online terminal
-							</div>
-							<div class="spec">
-								<span class="variable">15</span>
-								total products
-							</div>
-							<div class="spec">
-								<span class="variable">0.5%</span>
-								Transaction fee
-							</div>
-						</div>
-						<a class="btn-signup button-clear" href="signup.html">
-							<span>Start free trial</span>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="chart last">
-						<div class="quantity">
-							<span class="dollar">$</span>
-							<span class="price">119</span>
-							<span class="period">/month</span>
-						</div>
-						<div class="plan-name">Premium</div>
-						<div class="specs">
-							<div class="spec">
-								<span class="variable">Unlimited</span>
-								team members
-							</div>
-							<div class="spec">
-								<span class="variable">Digital</span>
-								recurring billing
-							</div>
-							<div class="spec">
-								<span class="variable">Virtual</span>
-								online terminal
-							</div>
-							<div class="spec">
-								<span class="variable">25</span>
-								total products
-							</div>
-							<div class="spec">
-								<span class="variable">No</span>
-								Transaction fee
-							</div>
-						</div>
-						<a class="btn-signup button-clear" href="signup.html">
-							<span>Start free trial</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    -->
+  
 	<div id="slider">
 		<div class="container">
 			<div class="row header">
@@ -296,12 +185,14 @@
 	</div>
 
 	<div id="cta">
-		<p>
-			Join the private beta program! 
-		</p>                 
-	    <form class="col-sm-4 col-sm-offset-4">
-				<input type="text" name="email" class="form-control" placeholder="Your email address " />    
-				<a href="signup.html" class="button align-right">Sign up free private beta NOW!</a>
+	
+		<form id="private-beta" class="col-sm-4 col-sm-offset-4">
+            		<label for="mc-email" id="status-pb" class="cta">Join the private beta program! </label>
+
+					<input id="mc-email"  type="email" class="form-control" placeholder="Your email address" />    
+					<br/>
+
+   				<input type="submit" class="button align-right" value="Sign up free private beta NOW!"/>
 		</form>
 		
 	</div>
@@ -315,5 +206,18 @@
 			</div>
 		</div>
 	</div>
+	
+	<script>
+	$('#private-beta-subscribe').ajaxChimp({
+    	url: 'http://mondora.us4.list-manage.com/subscribe/post?u=331eed2943e90730598158f56&id=89b5a4d3e5'
+    });
+	
+	$('#private-beta').ajaxChimp({
+    	url: 'http://mondora.us4.list-manage.com/subscribe/post?u=331eed2943e90730598158f56&id=89b5a4d3e5'
+    });
+
+
+	</script>
+	
 </body>
 </html>
